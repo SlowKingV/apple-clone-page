@@ -4,10 +4,6 @@ body {
   text-align: center;
 }
 
-/* ----------------------------------------------------------------------------------------------
-                                          HEADER
----------------------------------------------------------------------------------------------- */
-
 header {
   background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
   display: inline-block;
@@ -59,9 +55,24 @@ header nav ul li {
   flex: 1;
 }
 
+footer .footer-links li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
 header nav ul li:not(:nth-last-child(1)) {
   box-shadow: -1px 0 0 0 #666 inset;
 }
+
+footer a {
+  text-decoration: none;
+  color: #2b92c2;
+}
+
+footer > span > a {
+  padding: 0 5px;
+}
+
 
 header nav li a {
   align-items: center;
@@ -86,6 +97,10 @@ header nav li div {
   width: 100%;
 }
 
+header nav li span {
+  z-index: 10;
+}
+
 header .search > span {
   display: block;
   background-color: #000;
@@ -97,8 +112,12 @@ header .search > span {
   width: 100%;
 }
 
-header nav li span {
-  z-index: 10;
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer > span > a:nth-child(1) {
+  border-right: 1px solid #aaa;
 }
 
 header nav li:nth-child(1) a {
@@ -109,6 +128,14 @@ header nav ul li:nth-last-child(1) {
   flex: none;
   position: relative;
   padding: 0 12px;
+}
+
+footer .footer-links li:not(:nth-last-child(1)) {
+  border-right: 1px solid #aaa;
+}
+
+footer .footer-links li:last-child {
+  transform: scale(1.2);
 }
 
 header nav ul li:not(:nth-last-child(1)):hover {
@@ -139,23 +166,20 @@ header .search i {
 }
 
 header .search input {
-  border: 0;
   background: none;
-  width: 95px;
+  border: 0;
+  box-sizing: border-box;
+  padding-left: 25px;
+  position: relative;
   transition: all 0.3s ease-out;
+  width: 95px;
+  z-index: 10;
 }
 
 header .search input:focus {
   background-color: #fff;
   box-shadow: 0 1px 1px 0 #8b8b8b inset;
   width: 190px;
-}
-
-header .search input {
-  box-sizing: border-box;
-  padding-left: 25px;
-  position: relative;
-  z-index: 10;
 }
 
 header .content > .no-link {
@@ -171,6 +195,10 @@ header .content > .no-link h1 {
   font-weight: 300;
   font-size: 48px;
   margin-bottom: 0;
+}
+
+footer p:nth-child(1) {
+  float: left;
 }
 
 header .content > .no-link p {
@@ -189,10 +217,6 @@ header .content > a:not(.no-link):hover {
   text-decoration: underline;
 }
 
-/* ----------------------------------------------------------------------------------------------
-                                          SHOWCASE
----------------------------------------------------------------------------------------------- */
-
 .showcase {
   display: inline-block;
   width: 1440px;
@@ -210,10 +234,6 @@ header .content > a:not(.no-link):hover {
   height: 100%;
 }
 
-/* ----------------------------------------------------------------------------------------------
-                                          FOOTER
----------------------------------------------------------------------------------------------- */
-
 footer {
   display: inline-block;
   width: 1000px;
@@ -223,45 +243,11 @@ footer {
   color: #8b8b8b;
 }
 
-footer a {
-  text-decoration: none;
-  color: #2b92c2;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer p:nth-child(1) {
-  float: left;
-}
-
 footer .footer-links {
   list-style: none;
   float: right;
 }
 
-footer .footer-links li {
-  display: inline-block;
-  padding: 0 5px;
-}
-
-footer .footer-links li:not(:nth-last-child(1)) {
-  border-right: 1px solid #aaa;
-}
-
-footer .footer-links li:last-child {
-  transform: scale(1.2);
-}
-
 footer span:nth-child(3) {
   float: left;
-}
-
-footer > span > a {
-  padding: 0 5px;
-}
-
-footer > span > a:nth-child(1) {
-  border-right: 1px solid #aaa;
 }
