@@ -86,6 +86,17 @@ header nav li div {
     width: 100%;
 }
 
+header .search > span {
+    display: block;
+    background-color: #000;
+    height: 50%;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 header nav li span {
     z-index: 10;
 }
