@@ -34,6 +34,7 @@ I removed the list styling and links underline of the elements with the properti
 - VSCode
 
 ## Live Demo
+You can checkout how it looks like here: [https://slowkingv.github.io/apple-clone-page/](https://slowkingv.github.io/apple-clone-page/)
 
 ## Author
 - Github: [@SlowKingV](https://github.com/SlowKingV)
